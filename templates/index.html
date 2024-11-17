@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Healthcare</title>
+</head>
+<body>
+    <h1 class="header">Welcome to the Global Health Monitoring System</h1>
+    <div class="container text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;">
+        <div class="row">
+
+            <div class="col">
+                <h3 style="font-size: 36px;">Overview of Data Statistics</h3>
+                <ul class="list-group" style="font-size: 22px;">
+                    <li class="list-group-item">
+                        Total Patients: <div style="display: block; font-weight: 600;">{{.TotalPatients}}</div>
+                    </li>
+                    <li class="list-group-item">
+                        Total Diseases: <div style="display: block; font-weight: 600;">{{.TotalDiseases}}</div>
+                    </li>
+                    <li class="list-group-item">
+                        Total Countries: <div style="display: block; font-weight: 600;">{{.TotalCountries}}</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <h3 style="font-size: 36px;">Latest Records</h3>
+                <ul class="list-group" style="font-size: 22px;">
+                    <li class="list-group-item">
+                        Disease: <div style="display: block; font-weight: 600;">{{.LatestDiseaseName}}</div>
+                    </li>
+                    <li class="list-group-item">
+                        Country: <div style="display: block; font-weight: 600;">{{.LatestCountry}}</div>
+                    </li>
+                    <li class="list-group-item">
+                        First Recorded Date: <div style="display: block; font-weight: 600;">{{.LatestRecordDate}}</div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
